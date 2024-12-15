@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head onload="main()">
     <meta charset="UTF-8">
     <title>pepejw</title>
     <link rel="stylesheet" href="style.css">
@@ -12,13 +12,17 @@
     <div id="pfp"></div>
     <div id="title">pepe's site</div>
     </div>
-    <div id="home" class="page">home</div>
-    <div id="about" class="page">about me</div>
-    <div id="socials" class="page">socials</div>
-    <div id="lang" class="page">en</div>
+    <div id="home" class="page active" onclick="changePage('home')">home</div>
+    <div id="about" class="page" onclick="changePage('about')">about me</div>
+    <div id="socials" class="page" onclick="changePage('socials')">socials</div>
+    <label for="lang" id="lang-label">lang:</label>
+    <select name="lang" id="lang" onchange="changeLang(this.value)">
+        <option value="en" selected="selected">en</option>
+        <option value="tok">tok</option>
+    </select>
 </div>
-<div class="content">
-    
+<div class="content" id="content">
 </div>
+<script src="index.js"></script>
 </body>
 </html>

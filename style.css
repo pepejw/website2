@@ -2,6 +2,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #676767;
+    user-select: none;
 }
 .titlebar{
     display: flex;
@@ -11,7 +12,7 @@ body {
     width: 96vw;
     height: 6vh;
     background-color: #454545;
-    padding: 2vh 1vh;
+    padding: 2vh 1vh 2vh 0.75vh;
     align-items: center;
     font-size: 3vh;
     border-radius: 1.5vh;
@@ -41,10 +42,23 @@ body {
 }
 .page{
     margin: 1vw;
+    padding: 0.5vh 0.5vw;
+    box-sizing:border-box;
 }
-#lang{
+#lang-label{
     margin-left: auto;
+    margin-right: 0.2vw;
 }
 .no-display{
     visibility: hidden;
+}
+.active{
+    border-radius: 1.5vh;
+    outline: 2px solid black;
+}
+option{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
 }
