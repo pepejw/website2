@@ -12,16 +12,16 @@
     <div id="pfp"></div>
     <div id="title">pepe's site</div>
     </div>
-    <div id="home" class="page active" onclick="changePage('home')">home</div>
-    <div id="about" class="page" onclick="changePage('about')">about me</div>
-    <div id="socials" class="page" onclick="changePage('socials')">socials</div>
-    <label for="lang" id="lang-label">lang:</label>
-    <select name="lang" id="lang" onchange="changeLang(this.value)">
-        <option value="en" selected="selected">en</option>
-        <option value="tok">tok</option>
-    </select>
+    <div id="home" class="page active" onmousedown="changePage('home')">home</div>
+    <div id="about" class="page" onmousedown="changePage('about')">about me</div>
+    <div id="socials" class="page" onmousedown="changePage('socials')">socials</div>
+    <div id="lang" onmousedown="changeLang()">toki pona</div>
 </div>
 <div class="content" id="content">
+    <h1>Hi, I'm Pepe!</h1>
+    I'm a fucking nerd lmfaooooo<br>
+    Website's a work in progress.<br>
+    uhh gay asf
 </div>
 <script src="index.js"></script>
 </body>

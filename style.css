@@ -12,10 +12,20 @@ body {
     width: 96vw;
     height: 6vh;
     background-color: #454545;
-    padding: 2vh 1vh 2vh 0.75vh;
+    padding: 2.25vh 1vh 2.25vh 0.85vh;
     align-items: center;
     font-size: 3vh;
     border-radius: 1.5vh;
+}
+.content{
+    display: inline;
+    position: absolute;
+    top: 12vh;
+    left: 5vw;
+    height: 88vh;
+    width: 90vw;
+    text-align: center;
+    font-size: 20px
 }
 .siteinfo{
     display: flex;
@@ -45,9 +55,13 @@ body {
     padding: 0.5vh 0.5vw;
     box-sizing:border-box;
 }
-#lang-label{
+#lang{
     margin-left: auto;
     margin-right: 0.2vw;
+    font-size: 0.7vw;
+    border-radius: 0.5vh;
+    padding: 0.2vh 0.2vh;
+    background-color: #545454;
 }
 .no-display{
     visibility: hidden;
